@@ -1,0 +1,58 @@
+h1 {
+	color: green !important;  /* wtedy podajemy ze to jest najwazniejszy style*/
+	/*display: none;  /*ustawiamy ba brak wyswietlania*/
+	visibility: hidden;  /*zajmuje miejsce ale nei wyswiela*/
+}
+
+h2 {
+	/*color: gray;
+	color: #66ffff;*/
+	color: rgb(102, 255, 255);
+	
+}
+
+.niebieski {
+	color: blue;
+}
+
+.czerwony {
+	color: red:
+}
+
+#kuku, #kuku2 {
+	font-weight: bold;
+	color: red;
+}
+
+.pochylony {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	border: 1px solid black;
+	height: 400px;
+	/*min-height: 50px;*/
+	padding: 10px;
+	margin: 20px;
+	background-color: yellow;
+	box-sizing: border-box;  /*domyslnie content-box*/
+	overflow: hidden;
+	/*overflow: scroll*/
+	
+	}
+	
+div#pierwszy > div {
+	height: 200px;
+	background-color: green;
+	width: 200px;
+}
+
+#pierwszy > div > div {
+	height: 100px;
+	background-color: red;
+	width: 100px;
+}

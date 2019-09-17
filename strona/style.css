@@ -1,0 +1,119 @@
+a {
+	font-family: Arial, sans-serif;
+}
+
+.main_menu{
+	height: 50px;
+	background-color: #000033;
+	padding: 10px;;
+	
+}
+
+.main_menu > ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.main_menu > ul > li{
+	/*display: inline-block;*/
+	/*display: block;*/
+	border: 1px solid #b3b3ff;
+	height: 25px;
+	width: 100px;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: content-box;
+	font-size: 15px;
+	color: #fff;
+	border-radius:4px;
+	box-shadow: 1px 1px 1px #b3b3ff;
+	background-color: #000033;
+	margin-left: 5px;
+	/*float: left;*/
+	transition: background-color 3 s;
+	-webkit-transition: background-color 1 s;
+}
+
+.main_menu > ul > li a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.main_menu > ul > li:hover{
+	background-color: green;
+	
+}
+
+.main_menu > ul > li:hover a{
+	color: #fff;
+	text-decoration:none;}
+	
+.main_menu .submenu{
+	display: none;
+}
+
+.main_menu > ul > li:hover .submenu{
+	display: block;
+	position: absolute;
+	background-color: #b3b3ff;
+	width: 100%;
+	top: 49px;
+}
+
+.main_menu > ul > li{
+	position: relative;
+}
+
+.main_menu > ul > li:hover .submenu li {
+	padding: 10px 0px;
+}
+
+.main_menu > ul > li.more > a > i {
+	font-size: 1.3 em;
+	vertical-align: middle;
+	transition: transform 2s;
+}
+
+.main_menu > ul > li.more:hover > a > i {
+	transform: rotate(90deg);
+}
+
+.main_menu > ul > li.more:hover .submenu::before {
+	font-family: 'Font Awesome 5 free';
+	font-weight: 900;
+	content: "\f0d8";
+	color: #b3b3ff;
+	font-size: 2em;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: -19px;
+}
+
+/*.more > a::after{
+	content: "test"; możemy dodawać jakiś element po lub przed
+}*/
+
+section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+article {
+	border: 1px solid black;
+	background-color: yellow;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	flex-basis: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+	article{
+		flex-basis:100%;
+		font-size:2em;
+}

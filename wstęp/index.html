@@ -1,0 +1,76 @@
+<!-- html -->  <!-- to oznacza że to jest komentaż-->
+<!DOCTYPE html>  <!-- oznacza rodzaj dokumetu - html 5 -->
+
+<html lang="pl-PL">  <!--lang to jest atrybut, litery to pl  a region PL-->
+	<head>   <!-- odpowiada za OPIS NASZEJ STRONY, slowa kluczowe, gdzie co i jak, wżnym taghiem jest title w head tu mozemy zalaczac rowniez CSS i JS--> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"  <!--info dla przegoldarki aby zawsze otwierala z najnowsza wersja-->
+		<meta charset="UTF-8"/>
+		<title>Jakiś tytuł</title>
+		<meta name="description" content="Jakiś tam opis"/>
+		<style>
+			<!--to jest poerwszy pomysl zeby tu wpisywac style-->
+			h1 {
+				color: blue;
+				}
+		</style>
+		<!--drugi spisob oscylacji poprzez link re-->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	
+	<body> <!-- odpowiada za prezentację -->
+		<div id="pierwszy">
+			<div></div>
+			<div>
+				<div></div>
+				<div></div>
+				
+			</div>
+			
+			<!--To jest tekst w divie<br>
+			To jest druga linijka<br>
+			To jest trzecia linijak-->
+		</div>
+		<span>To jest tekst w elemencie liniowy</span>
+		<a target="blank"title="Link do WP" href="http://wp.pl">To jest link</a>
+		<p class="niebieski pochylony" id="kuku">
+			To jest pierwszy paragraf
+		</p>
+		<p class="niebieski" id="kuku2">
+			To jest pierwszy paragraf
+		</p>
+		<p class="czerwony">
+			To jest drugi paragraf
+		</p>
+		<h1>To jest tytuł artykułu header</h1>
+		<span class="czerwony pochylony">To jest tekst span</span>
+	<header>   <!-- znacznik semantyczny - wiemy ze to jest nagowelk dzieki temu znacznikowi-->
+		<nav>
+		
+		</nav>
+	</header>
+	
+	<main>
+		<section>
+			<article>
+				<header>
+					<h1>To jest tytuł artykułu header</h1>
+					<h2>To jest tytuł artykułu</h2>
+					<h3 style="color: red">To jest tytuł artykułu</h3>  <!--trzeci sposob na oscylowanie to bezposredniow w znacznikach-->
+				</header>
+				<section>To jest treść artykułu</section>
+			</article>
+			<article>
+		
+			</article>
+			
+		</section>
+	
+	
+	</main>
+	
+	<footer>
+	
+	</footer>
+	
+	</body>
+</html>
